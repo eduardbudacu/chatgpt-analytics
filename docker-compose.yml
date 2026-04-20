@@ -1,0 +1,23 @@
+services:
+  dashboard:
+    build: .
+    ports:
+      - "8050:8050"
+    volumes:
+      - ./dashboard_data.json:/app/dashboard_data.json:ro
+    environment:
+      - DASHBOARD_DATA=/app/dashboard_data.json
+    restart: unless-stopped
+
+  # One-off service to regenerate dashboard_data.json from raw export
+  analyze:
+    build: .
+    volumes:
+      - ./export:/data/export:ro
+      - ./dashboard_data.json:/app/dashboard_data.json
+    environment:
+      - CHATGPT_EXPORT=/data/export
+      - DASHBOARD_DATA=/app/dashboard_data.json
+    command: python -u analyze_dashboard.py
+    profiles:
+      - tools

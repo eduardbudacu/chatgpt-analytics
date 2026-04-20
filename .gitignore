@@ -1,0 +1,7 @@
+# ChatGPT export data — keep directory, ignore contents
+export/*
+!export/.gitkeep
+
+# Generated analysis output
+analysis_results.json
+dashboard_data.json

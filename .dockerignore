@@ -1,0 +1,8 @@
+*.zip
+__pycache__
+*.pyc
+.git
+analysis_results.json
+analyze.js
+analyze.py
+c99c9a2d*

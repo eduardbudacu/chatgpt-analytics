@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"D:/chatgpt/c99c9a2d3817b3cfdb706409022ee0c04ad6e2c7a40c9428c8fe02b1aeb2689c-2026-03-01-10-56-41-21b2a2dc87b744dcaa8b4bcba7407fad\"/*.json)",
+      "Bash(BASE=\"D:/chatgpt/c99c9a2d3817b3cfdb706409022ee0c04ad6e2c7a40c9428c8fe02b1aeb2689c-2026-03-01-10-56-41-21b2a2dc87b744dcaa8b4bcba7407fad\")",
+      "Bash(python3 -c \":*)",
+      "Bash(node --version)",
+      "Bash(node -e \":*)",
+      "Bash(py analyze.py)",
+      "Bash(py -X utf8 analyze.py)",
+      "Bash(py --version)",
+      "Bash(npm --version)",
+      "Bash(npm view plotly.js version)",
+      "Bash(npm view chart.js version)",
+      "Bash(npm view d3 version)",
+      "Bash(npm view recharts version)",
+      "Bash(py -m pip install dash plotly pandas numpy dash-bootstrap-components)",
+      "Bash(py -X utf8 analyze_dashboard.py)",
+      "Bash(py -X utf8 dashboard.py)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8050)",
+      "Bash(docker --version)",
+      "Bash(docker compose build dashboard)",
+      "Bash(docker compose up dashboard -d)",
+      "Bash(docker compose down)",
+      "Bash(py -X utf8 extract_conversation.py)",
+      "Bash(py -c \"import json; d=json.load\\(open\\(''temp_conversation_extract.json'',''r'',encoding=''utf-8''\\)\\); print\\(''Valid JSON''\\); print\\(''Messages:'', len\\(d[''messages'']\\)\\); print\\(''Last msg time:'', d[''messages''][-1][''create_time_readable'']\\)\")",
+      "Bash(python -c \":*)",
+      "Bash(py -c \":*)",
+      "Bash(py -X utf8 -c \":*)",
+      "Bash(py -X utf8 extract_stories.py)",
+      "Bash(py -c \"import os; print\\(f''{os.path.getsize\\(\"\"D:/chatgpt/extracted_stories.json\"\"\\) / 1024:.1f} KB''\\)\")",
+      "Bash(D:/chatgpt/extract_stories.py:*)",
+      "Bash(py -X utf8 D:/chatgpt/extract_stories.py)",
+      "Bash(start /b py -m http.server 8051)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8051/)",
+      "Bash(py -X utf8 refine_stories.py)"
+    ]
+  }
+}
